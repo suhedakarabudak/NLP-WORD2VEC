@@ -1,11 +1,12 @@
 # NLP-WORD2VEC
  Doğal Dİl İşleme
  
-**Python ile [Hepsiburada.com](http://Hepsiburada.com) ‘dan Verilerin Kazınması**
+**Projenin Amacı**
 
 Projeden bahsetmek gerekirse hepsiburada da olan kadın ayakkabılarına yapılan yorumlar ve o yorumlara gelen yıldızları çekme işlemi ve Nlp modellerinden 
-word2vec modelini kullanarak projeyi geliştirmek.
+word2vec modelini kullanarak kelimelerin birbiri ile olan yakınlık ilişkisini inceleyerek projeyi geliştirmek.
 
+**Python ile [Hepsiburada.com](http://Hepsiburada.com) ‘dan Verilerin Kazınması**
 Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) adlı kütüphanesini kullanacağımı belirtmek isterim.Eğer daha fazla bilgi almak istersiniz [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) inceleyebilirsiniz.
 
 ##Web scraping yaptıktan dataframe oluşturarak modelimizde kullanacağımız veri setini elde ediyorum.
