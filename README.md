@@ -7,6 +7,7 @@ Projeden bahsetmek gerekirse hepsiburada da olan kadın ayakkabılarına yapıla
 word2vec modelini kullanarak projeyi geliştirmek.
 
 Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) adlı kütüphanesini kullanacağımı belirtmek isterim.Eğer daha fazla bilgi almak istersiniz [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) inceleyebilirsiniz.
+
 ##Web scraping yaptıktan dataframe oluşturarak modelimizde kullanacağımız veri setini elde ediyorum.
 |  | Yorum | Yıldız |
 | --- | --- | --- |
@@ -35,17 +36,29 @@ Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https:
 
 
 #Veri Görselleştirme
+
 #Görselleştirme
+
 from IPython.display import display,HTML,IFrame
+
 import seaborn as sns
+
 import matplotlib.pyplot as plt
+
 import matplotlib.image as mpimg
+
 import matplotlib.cm as cm
+
 import base64
+
 %matplotlib inline
+
 import plotly.express as px
+
 sns.set()
+
 !pip install textblob
+
 from textblob import TextBlob
 
 df["harf_uzunluğu"]=df["Yorum"].astype(str).apply(len)   #kelime sayısı ve metin uzunluğu
@@ -64,7 +77,8 @@ fig.show()
 
 ![newplot (6).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b46b3f2-1230-4065-b6ce-4682117ab72f/newplot_(6).png)
 
-##Word2Vec Nedir?
+Word2Vec Nedir?
+
 Tahmin tabanlı (prediction-based) kelime temsil yöntemi olup, 2013 yılında Google araştırmacısı Thomas Mikolov ve ekip arkadaşları ile birlikte temelinde yapay sinir ağı ile iki farklı model kullanarak kelimelerin eğitilmesi amaçlanıp geliştirilmiştir.
 
 Word2Vec’in kullandığı iki model CBOW(Continuous Bag of Words) ve Skip-Gram Model’dir. Bu iki modelin mimarisini inceleyecek olursak:
@@ -83,14 +97,15 @@ Skip Gram model ve CBOW arasındaki tek fark Skip Gram modelin CBOW’un tam ter
 
 ![newplot (4).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/197b54cb-aefa-4dd9-a0f8-ae33e52be557/newplot_(4).png)
 
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3e898255-97f9-4836-acbc-4958ca598b27/Untitled.png)
 
-#CBOW model Sonuçları
+#CBOW Model Sonuçları
 
 Cosine similarity between 'kutuda' ve  'muhafaza' - CBOW :  0.091992885
 
 Cosine similarity between 'kutuda' ve  'etmenize' - CBOW :  -0.19237778
 
-#Skip-Gram model Sonuçları
+#Skip-Gram Model Sonuçları
 
 Cosine similarity between 'kutuda' ve  'muhafaza' - Skip Gram :  0.08502861
 
