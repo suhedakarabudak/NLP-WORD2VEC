@@ -7,6 +7,7 @@ Projeden bahsetmek gerekirse hepsiburada da olan kadın ayakkabılarına yapıla
 word2vec modelini kullanarak kelimelerin birbiri ile olan yakınlık ilişkisini inceleyerek projeyi geliştirmek.
 
 **Python ile [Hepsiburada.com](http://Hepsiburada.com) ‘dan Verilerin Kazınması**
+
 Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) adlı kütüphanesini kullanacağımı belirtmek isterim.Eğer daha fazla bilgi almak istersiniz [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) inceleyebilirsiniz.
 
 ##Web scraping yaptıktan dataframe oluşturarak modelimizde kullanacağımız veri setini elde ediyorum.
@@ -18,7 +19,8 @@ Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https:
 | 3 | Urun cok guzel, ayagi genis olanlar icin bir b... | 5.0 |
 | 4 | Uzun süre giyip yurumedim henüz. Evde denediği... | 5.0 |
 
-#Veri önişleme (Data Preprocessing) :
+**Veri önişleme (Data Preprocessing)**
+
 - Veri önişleme adımları
     1. Eksik (NaN) değerlerin değerlendirilmesi 
     2. Noktalama İşaretlerinin kaldırılması
@@ -36,14 +38,14 @@ Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https:
 | 5 | çok kaliteli bir ürün anneme aldıktan sonra bir çift de kardeşime aldım hem fp ürünü hemde şık | 5.0 |
 
 
-#Veri Görselleştirme
+**Veri Görselleştirme**
 
 ![newplot (7)](https://user-images.githubusercontent.com/100937634/200273582-49de6518-5eeb-4fd2-a6e7-21c35185c960.png)
 
 ![newplot (6) (1)](https://user-images.githubusercontent.com/100937634/200273711-b1bfabdc-e569-40f7-8bd4-111e5333c54d.png)
 
 
-Word2Vec Nedir?
+**Word2Vec Nedir?
 
 Tahmin tabanlı (prediction-based) kelime temsil yöntemi olup, 2013 yılında Google araştırmacısı Thomas Mikolov ve ekip arkadaşları ile birlikte temelinde yapay sinir ağı ile iki farklı model kullanarak kelimelerin eğitilmesi amaçlanıp geliştirilmiştir.
 
@@ -66,13 +68,13 @@ Skip Gram model ve CBOW arasındaki tek fark Skip Gram modelin CBOW’un tam ter
 
 ![Untitled](https://user-images.githubusercontent.com/100937634/200272823-d4e448b6-f46e-47dc-93fe-dc1ba61231c6.png)
 
-#CBOW Model Sonuçları
+**CBOW Model Sonuçları
 
 Cosine similarity between 'kutuda' ve  'muhafaza' - CBOW :  0.091992885
 
 Cosine similarity between 'kutuda' ve  'etmenize' - CBOW :  -0.19237778
 
-#Skip-Gram Model Sonuçları
+**Skip-Gram Model Sonuçları
 
 Cosine similarity between 'kutuda' ve  'muhafaza' - Skip Gram :  0.08502861
 
