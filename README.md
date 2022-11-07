@@ -37,42 +37,6 @@ Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https:
 
 #Veri Görselleştirme
 
-#Görselleştirme
-
-from IPython.display import display,HTML,IFrame
-
-import seaborn as sns
-
-import matplotlib.pyplot as plt
-
-import matplotlib.image as mpimg
-
-import matplotlib.cm as cm
-
-import base64
-
-%matplotlib inline
-
-import plotly.express as px
-
-sns.set()
-
-!pip install textblob
-
-from textblob import TextBlob
-
-df["harf_uzunluğu"]=df["Yorum"].astype(str).apply(len)   #kelime sayısı ve metin uzunluğu
-
-df["kelime_sayisi"]=df["Yorum"].apply(lambda x:len(str(x).split()
-
-fig=px.histogram(df,x="kelime_sayisi",nbins=200,title="Kelime Sayısı")
-
-fig.show()
-
-fig = px.histogram(df, x="harf_uzunlugu", nbins=20, title='Harf Uuznluğu')
-
-fig.show()
-
 ![newplot.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8270f11f-8742-4fa4-9cf2-d19eae4dbfa1/newplot.png)
 
 ![newplot (6).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b46b3f2-1230-4065-b6ce-4682117ab72f/newplot_(6).png)
@@ -97,7 +61,7 @@ Skip Gram model ve CBOW arasındaki tek fark Skip Gram modelin CBOW’un tam ter
 
 ![newplot (4).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/197b54cb-aefa-4dd9-a0f8-ae33e52be557/newplot_(4).png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3e898255-97f9-4836-acbc-4958ca598b27/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/100937634/200272823-d4e448b6-f46e-47dc-93fe-dc1ba61231c6.png)
 
 #CBOW Model Sonuçları
 
