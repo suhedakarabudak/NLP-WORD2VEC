@@ -60,8 +60,6 @@ Skip Gram model ve CBOW arasındaki tek fark Skip Gram modelin CBOW’un tam ter
 
 ![newplot (2) (1)](https://user-images.githubusercontent.com/100937634/200258042-5b11a879-066f-47d8-9f26-156cbbfffbe0.png)
 
-![newplot (2) (2)](https://user-images.githubusercontent.com/100937634/200273985-bee4bddf-cb74-4f38-9cbb-20b86019085a.png)
-
 
 ![newplot (4) (1)](https://user-images.githubusercontent.com/100937634/200273262-b7c7e014-6dac-474f-a451-7f4b2e279c66.png)
 
