@@ -37,9 +37,10 @@ Bu çalışmada  web scraping yapmadan önce Python’un  [BeautifulSoup](https:
 
 #Veri Görselleştirme
 
-![newplot.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8270f11f-8742-4fa4-9cf2-d19eae4dbfa1/newplot.png)
+![newplot (7)](https://user-images.githubusercontent.com/100937634/200273582-49de6518-5eeb-4fd2-a6e7-21c35185c960.png)
 
-![newplot (6).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b46b3f2-1230-4065-b6ce-4682117ab72f/newplot_(6).png)
+![newplot (6) (1)](https://user-images.githubusercontent.com/100937634/200273711-b1bfabdc-e569-40f7-8bd4-111e5333c54d.png)
+
 
 Word2Vec Nedir?
 
@@ -59,7 +60,9 @@ Skip Gram model ve CBOW arasındaki tek fark Skip Gram modelin CBOW’un tam ter
 
 ![newplot (2) (1)](https://user-images.githubusercontent.com/100937634/200258042-5b11a879-066f-47d8-9f26-156cbbfffbe0.png)
 
-![newplot (4).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/197b54cb-aefa-4dd9-a0f8-ae33e52be557/newplot_(4).png)
+![newplot (4) (2)](https://user-images.githubusercontent.com/100937634/200273399-83857561-5141-4358-9d92-2caac7eb39e6.png)
+
+![newplot (4) (1)](https://user-images.githubusercontent.com/100937634/200273262-b7c7e014-6dac-474f-a451-7f4b2e279c66.png)
 
 ![Untitled](https://user-images.githubusercontent.com/100937634/200272823-d4e448b6-f46e-47dc-93fe-dc1ba61231c6.png)
 
